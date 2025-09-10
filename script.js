@@ -19,7 +19,7 @@ function formatTime(seconds) {
 
 function updateDisplay() {
   timerEl.textContent = formatTime(timeLeft);
-  statusEl.textContent = onBreak ? "Pause ☕" : "Travail 💻";
+  statusEl.textContent = onBreak ? "Pause" : "Travail";
   startPauseBtn.textContent = isRunning ? "Pause" : "Démarrer";
 }
 
