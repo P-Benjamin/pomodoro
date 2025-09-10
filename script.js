@@ -1,5 +1,5 @@
-const WORK_TIME = 25 * 60; // 25 minutes
-const BREAK_TIME = 5 * 60; // 5 minutes
+const WORK_TIME = 25 * 60; 
+const BREAK_TIME = 5 * 60; 
 
 let timeLeft = WORK_TIME;
 let isRunning = false;
@@ -28,7 +28,6 @@ function tick() {
     timeLeft--;
     updateDisplay();
   } else {
-    // switch phase
     if (onBreak) {
       timeLeft = WORK_TIME;
       onBreak = false;
@@ -59,5 +58,4 @@ resetBtn.addEventListener("click", () => {
   updateDisplay();
 });
 
-// Init
 updateDisplay();
